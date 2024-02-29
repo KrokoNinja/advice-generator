@@ -29,7 +29,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="mx-auto flex flex-col p-10 items-center gap-y-7 bg-dark-grayish-blue rounded-xl relative max-w-[600px]">
         <h2 className="text-neon-green h2 text-md font-bold tracking-[0.3em]">ADVICE #{id}</h2>
-        <h1 className="text-light-cyan text-[28px] font-bold text-center">"{advice}"</h1>
+        <h1 className="text-light-cyan text-[28px] font-bold text-center">&quot;{advice}&quot;</h1>
         <Image src="/pattern-divider-desktop.svg" alt="divider" className="mb-5" width={444} height={16} />
         <button className="bg-neon-green p-5 rounded-full absolute -bottom-7 button-hover disabled:hover:shadow-none disabled:bg-gray-500" onClick={() => getAdvice()} disabled={loading}>
           <Image src="/icon-dice.svg" alt="dice icon" width={20} height={20} />
